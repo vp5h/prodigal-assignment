@@ -15,8 +15,8 @@ import './style.css';
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
 
-import Filtercomp from '../App/ProjComponents/FliterComp';
-import Labelcomp from '../App/ProjComponents/LabelComp';
+import Filtercomp from './ProjComponents/FliterComp';
+import Labelcomp from './ProjComponents/LabelComp';
 import makeSelectHome from './selectors';
 import reducer from './reducer';
 import saga from './saga';
