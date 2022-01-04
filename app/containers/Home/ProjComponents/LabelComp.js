@@ -213,6 +213,9 @@ const Labelcomp = () => {
       }
     } // add arr
   }
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
 
   return (
     <>
@@ -254,6 +257,7 @@ const Labelcomp = () => {
         title="Multiple Add and Remove"
         visible={isModalVisible}
         onOk={handleOk}
+        onCancel={handleCancel}
       >
         <br />
         Selected elemenets are the common elemenets, You can add labels by
