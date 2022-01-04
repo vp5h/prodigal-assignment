@@ -51,7 +51,12 @@ const Labelcomp = () => {
     if (changedvalues) {
       commoneleinselected();
     }
-  }, [changedvalues, calllist, refresh]);
+  }, [changedvalues, refresh]);
+
+  useEffect(() => {
+    setRemovableLabel(editedmodalLabels);
+  }, [refresh]);
+
   useEffect(() => {
     addremoveMultipleCalcs();
   }, [editedmodalLabels]);
