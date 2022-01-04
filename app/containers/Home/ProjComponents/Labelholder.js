@@ -13,7 +13,6 @@ const Labelholder = ({
   calllist,
   setrefresh,
   refresh,
-
   changedIndexes,
 }) => {
   const id = callid.call_id;

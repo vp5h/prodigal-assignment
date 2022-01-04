@@ -30,7 +30,9 @@ const Labelcomp = () => {
       .then(response => response.json())
       .then(result => setCallList(result.data.call_data))
       .catch(error => console.log('error', error));
+  }, [refresh]);
 
+  useEffect(() => {
     const myHeaders2 = new Headers();
     myHeaders2.append('Content-Type', 'application/json');
     myHeaders2.append('user_id', '24b456');
@@ -43,7 +45,7 @@ const Labelcomp = () => {
       .then(response => response.json())
       .then(result => setLabelList(result.data.unique_label_list))
       .catch(error => console.log('error', error));
-  }, [refresh]);
+  }, []);
 
   useEffect(() => {
     if (changedvalues) {
