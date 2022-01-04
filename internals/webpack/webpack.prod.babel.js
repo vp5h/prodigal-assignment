@@ -109,12 +109,12 @@ module.exports = require('./webpack.base.babel')({
       safeToUseOptionalCaches: true,
     }),
 
-    new CompressionPlugin({
-      algorithm: 'gzip',
-      test: /\.js$|\.css$|\.html$/,
-      threshold: 10240,
-      minRatio: 0.8,
-    }),
+    // new CompressionPlugin({
+    //   algorithm: 'gzip',
+    //   test: /\.js$|\.css$|\.html$/,
+    //   threshold: 10240,
+    //   minRatio: 0.8,
+    // }),
 
     new WebpackPwaManifest({
       name: 'React Boilerplate',
