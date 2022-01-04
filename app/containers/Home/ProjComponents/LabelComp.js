@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Select, Row, Col, Table, Button, Modal } from 'antd';
 
-import 'antd/dist/antd.css';
-
 import Labelholder from './Labelholder';
 const { Option } = Select;
 const Labelcomp = () => {

@@ -21,9 +21,6 @@ const Labelholder = ({
   const [singleselectlabels, setsingleSelectedLabels] = useState(labels);
   const [isValueChecked, setIsValueChecked] = useState(false);
   function handleLabelChange(value) {
-    // console.log(value, id);
-    // console.log(calllist[id], calllist)
-    //  setCallList( [...calllist, calllist[id].label_id = value])
     setsingleSelectedLabels(value);
   }
 

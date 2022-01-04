@@ -10,7 +10,6 @@ import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 import { Button, Layout } from 'antd';
 
-import 'antd/dist/antd.css';
 import './style.css';
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
@@ -21,7 +20,7 @@ import makeSelectHome from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 export function Home() {
   useInjectReducer({ key: 'home', reducer });
   useInjectSaga({ key: 'home', saga });

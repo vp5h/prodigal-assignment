@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
 import { Select, Slider, Row, Col, Table } from 'antd';
-import 'antd/dist/antd.css';
 
 const { Option } = Select;
 
