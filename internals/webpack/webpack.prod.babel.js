@@ -1,5 +1,6 @@
 // Important modules this config uses
 const path = require('path');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const OfflinePlugin = require('offline-plugin');
@@ -125,11 +126,12 @@ module.exports = require('./webpack.base.babel')({
       ios: true,
       icons: [
         {
-          src: path.resolve('./app/images/favicon.png'),
+          src: path.resolve('../app/images/favicon.png'),
           sizes: [72, 96, 128, 144, 192, 384, 512],
         },
         {
-          src: path.resolve('./app/images/favicon.png'),
+          src: path.resolve('../app/images/favicon.png'),
+
           sizes: [120, 152, 167, 180],
           ios: true,
         },
