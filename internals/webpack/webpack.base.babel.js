@@ -3,6 +3,7 @@
  */
 
 const path = require('path');
+
 const webpack = require('webpack');
 
 module.exports = options => ({
@@ -12,7 +13,7 @@ module.exports = options => ({
     {
       // Compile into js/build.js
       path: path.resolve(process.cwd(), 'build'),
-      publicPath: '/',
+      publicPath: '/dist',
     },
     options.output,
   ), // Merge with env dependent settings
@@ -44,14 +45,14 @@ module.exports = options => ({
       {
         test: /\.(less)$/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               importLoaders: 1,
             },
           },
-          "less-loader",
+          'less-loader',
         ],
       },
       {
